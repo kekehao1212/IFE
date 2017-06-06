@@ -1,0 +1,34 @@
+.img_timg{
+	width:500px;
+	height: 300px;
+	text-align:center;
+}
+.img_timg:hover{
+	filter: blur(4px);
+	-webkit-filter:blur(4px);
+}
+.container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.text_container{
+	position: absolute;
+	border:solid #fff;
+	border-width: medium thin;
+	padding: 50px;
+}
+.text{
+	font-size: 26px;
+	color:transparent;
+	background:-webkit-linear-gradient(left,#f00,#ff0 10%,#0f0 20%,#0ff 35%,#00f 40%,#f00 50%,
+		#ff0 60%,#0f0 70%,#0ff 80%,#00f 90%, #f00);
+	animation: text_animate 5s  infinite linear;
+	-webkit-background-clip:text;
+	background-size: 200% 100%;
+
+}
+@keyframes text_animate{
+	from{background-position:0% 0;}
+	to{background-position:100% 0;}
+}

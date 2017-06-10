@@ -1,5 +1,5 @@
 ﻿## Markdown语法使用和css3 Task1
-###1. css属性
+### 1. css属性
  -  linear-gradient
    	
 	用默认的渐变方向绘制一个最简单的线性渐变
@@ -23,14 +23,14 @@
 
 	采用多倍背景首尾相接进行循环播放  
 	
-###2. ::before和::after使用方法
+### 2. ::before和::after使用方法
 
-#####注意事项
+##### 注意事项
 
  - ::before和::after必须添加content属性，否则无法使用
  - ::before和::after的display属性默认为: inline，使用时考虑是否修改为block
 
-###3. 不足之处
+### 3. 不足之处
 网页布局使用flex布局，利用position设置图片和文字重叠，该效果在Google浏览器可以实现，但是在360浏览器无法实现，不知什么原因。。。。。
 
 　　

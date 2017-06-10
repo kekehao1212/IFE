@@ -1,84 +1,34 @@
-* {
-	box-sizing: border-box;
-}
 .img_timg{
 	width:500px;
 	height: 300px;
+	text-align:center;
 }
-.container:hover .img_timg{
+.img_timg:hover{
 	filter: blur(4px);
 	-webkit-filter:blur(4px);
 }
 .container{
 	display: flex;
-	display: -webkit-flex;
 	justify-content: center;
 	align-items: center;
 }
 .text_container{
+	position: absolute;
+	border:solid #fff;
+	border-width: medium thin;
 	padding: 50px;
-	position:absolute;
-	visibility: hidden;
-	transition: all 2s;
 }
-.container:hover .text_container{
-	visibility:visible;
-}
-
-.text_container::before{
-  content:'';
-  position:absolute;
-  width:100%;
-  height:0px;
-  left:0px;
-  top:50%;
-  border:solid #fff;
-  border-width:0px 0px;
-  display: block;
-  transition:all 1s;
-  -webkit-transition:all 1s;
-}
-.container:hover .text_container::before{
-  height:100%;
-  top:0px;
-  border-width:0px 1px;
-}
-.text_container::after{
-  content:'';
-  position:absolute;
-  width:0px;
-  left:50%;
-  top:0px;
-  height: 97%;
-  border:solid #fff;
-  border-width:0px 0px;
-  display: block;
-  transition:all 1s;
-  -webkit-transition:all 1s;
-}
-
-.container:hover .text_container::after{
-  width:100%;
-  left:0px;
-  border-width:3px 0px;
-}
-
 .text{
-	position: relative;
 	font-size: 26px;
 	color:transparent;
 	background:-webkit-linear-gradient(left,#f00,#ff0 10%,#0f0 20%,#0ff 35%,#00f 40%,#f00 50%,
 		#ff0 60%,#0f0 70%,#0ff 80%,#00f 90%, #f00);
-	animation: text_animate 1s infinite linear;
+	animation: text_animate 5s  infinite linear;
 	-webkit-background-clip:text;
 	background-size: 200% 100%;
-	top:20px;
-	transition: all 1s;
+
 }
 @keyframes text_animate{
 	from{background-position:0% 0;}
 	to{background-position:100% 0;}
-}
-.container:hover .text{
-	top:0px;
 }
